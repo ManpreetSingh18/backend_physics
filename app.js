@@ -21,7 +21,7 @@ app.use(express.urlencoded({
 
 
 app.get("/", (req, res) => {
-  res.render("signup")
+  res.json({ message: "Hello, how are you?" });
 })
 app.get("/login", (req, res) => {
   res.render("login")
